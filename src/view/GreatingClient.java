@@ -1,6 +1,8 @@
 package view;
 
 import client.Client;
+import controller.ControllerShow;
+import model.ModelShowCar;
 
 import java.util.Scanner;
 
@@ -30,7 +32,8 @@ public class GreatingClient implements GreetingsView{
     public void filterOption(int options){
         switch (options){
             case 1 -> {
-                // write logic here
+                ControllerShow controllerShow = new ControllerShow();
+                controllerShow.parkingShow();
             }
             case 2 -> {
                 // write logic here
